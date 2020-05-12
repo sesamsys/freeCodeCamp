@@ -1,3 +1,11 @@
-label, input {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+label, input, button {
     display: block;
+}
+
+fieldset label, fieldset input {
+    display: inline;
 }
