@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC: Survey Form</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">How do you handle the quarantine / lockdown during the coronavirus crisis?</p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email address" required>
-        <label for="number" id="number-label">Days spent at home (Optional):</label>
-        <input type="number" min="7" max="365" id="number" name="number" placeholder="7-365">
-        <label for="dropdown">How would you rate your mood?</label>
-        <select name="dropdown" id="dropdown" required>
-            <option value="" disabled selected>Select which matches your mood best</option>
-            <option value="excellent">Excellent</option>
-            <option value="good">Good</option>
-            <option value="so-so">So-so</option>
-            <option value="bad">Bad</option>
-            <option value="horrible">Horrible</option>
-        </select>
-        <fieldset>
-            <legend>Are you able to work from home?</legend>
-            <input type="radio" id="yes" value="yes" name="work" checked>
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="partly" value="partly" name="work">
-            <label for="partly">Partly</label><br>
-            <input type="radio" id="no" value="no" name="work">
-            <label for="no">No</label><br>
-        </fieldset>
-        <fieldset>
-            <legend>What contributes to your mood? (Check all that apply)</legend>
-            <input type="checkbox" id="fear" value="fear" name="mood">
-            <label for="fear">Fear of infection</label><br>
-            <input type="checkbox" id="loneliness" value="loneliness" name="mood">
-            <label for="loneliness">Loneliness, isolation</label><br>
-            <input type="checkbox" id="finances" value="finances" name="mood">
-            <label for="finances">Financial issues</label><br>
-            <input type="checkbox" id="boredom" value="boredom" name="mood">
-            <label for="boredom">Boredom</label><br>
-        </fieldset>
-        <label for="comments">Any additional comments?</label>
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here…"></textarea>
-        <button id="submit" type="submit">Submit</button>
-    </form>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">How do you handle the quarantine / lockdown during the coronavirus crisis?</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <label for="number" id="number-label">Days spent at home (Optional):</label>
+            <input type="number" min="7" max="365" id="number" name="number" placeholder="7-365">
+            <label for="dropdown">How would you rate your mood?</label>
+            <select name="dropdown" id="dropdown" required>
+                <option value="" disabled selected>Select which matches your mood best</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="so-so">So-so</option>
+                <option value="bad">Bad</option>
+                <option value="horrible">Horrible</option>
+            </select>
+            <fieldset>
+                <legend>Are you able to work from home?</legend>
+                <input type="radio" id="yes" value="yes" name="work" checked>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="partly" value="partly" name="work">
+                <label for="partly">Partly</label><br>
+                <input type="radio" id="no" value="no" name="work">
+                <label for="no">No</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>What contributes to your mood? (Check all that apply)</legend>
+                <input type="checkbox" id="fear" value="fear" name="mood">
+                <label for="fear">Fear of infection</label><br>
+                <input type="checkbox" id="loneliness" value="loneliness" name="mood">
+                <label for="loneliness">Loneliness, isolation</label><br>
+                <input type="checkbox" id="finances" value="finances" name="mood">
+                <label for="finances">Financial issues</label><br>
+                <input type="checkbox" id="boredom" value="boredom" name="mood">
+                <label for="boredom">Boredom</label><br>
+            </fieldset>
+            <label for="comments">Any additional comments?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"
+                placeholder="Enter your comment here…"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
