@@ -38,7 +38,7 @@ label, input, button, select, fieldset {
 }
 
 fieldset label, fieldset input {
-    display: inline;
+    display: inline-block;
     font-size: 14px;
     margin-bottom: 5px;
     width: auto;
