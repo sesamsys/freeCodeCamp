@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: #ddd;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#header-container {
+    margin: auto;
+    width: 1000px;
+}
+
+header img {
+    height: 40px;
+    width: auto;
+    filter: invert(1);
+}
+
+header h1, header nav {
+    display: inline;
+}
+
+header nav {
+    float: right;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
