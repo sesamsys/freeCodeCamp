@@ -12,18 +12,32 @@
             <img src="assets/cat_line_art_pitr_Kitty_icon.svg" alt="" id="header-img">
         <h1>Black Metal Cats</h1>
         <nav id="nav-bar">
-            <button id="nav-link">Our Offer</button>
-            <button id="nav-link">Learn More</button>
-            <button id="nav-link buy">Buy Cats</button>
+            <a class="nav-link" href="#benefits">Benefits</a>
+            <a class="nav-link" href="#video">Learn More</a>
+            <a class="nav-link buy" href="#buy">Buy Cats</a>
         </nav>
         </div>
     </header>
     <main>
-        <form action="https://www.freecodecamp.com/email-submit">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
             <h2>Adopt a black shelter cat today</h2>
-            <input type="email" id="email" placeholder="Type your email"><br>
-            <input type="submit" id="submit" value="Let's rock!">
+            <input type="email" id="email" name="email" placeholder="Type your email"><br>
+            <input type="submit" id="submit" name="submit" value="Let's rock!">
         </form>
+        <div id="benefits">
+            <div class="emoji">😻</div>
+            <div class="benefit"><h3>Unparalleled love</h3><p>Adopted strays will be loyal and loving to whoever gives them a home</p></div>
+            <div class="emoji">🏥</div>
+            <div class="benefit"><h3>Healthy animals</h3><p>All shelter cats are throughly checked and properly vaccinated</p></div>
+            <div class="emoji">🎸</div>
+            <div class="benefit"><h3>Rock on</h3><p>Helping an animal will make you feel like a rockstar</p></div>
+        </div>
+
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NE0n42z_OQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="buy">
+            <h2>💰 All cats are free!</h2><p>All we ask is a small donation of $20 for the shelter. (tax-deductible)</p>
+        </div>
     </main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
