@@ -8,30 +8,51 @@
 </head>
 <body>
     <main id="main-doc">
-        <section id="main-section">
-            <header id="netatalk">Netatalk</header>
+        <section class="main-section" id="netatalk">
+            <header>Netatalk</header>
             <p>Netatalk is a free, open-source implementation of the Apple Filing Protocol. It allows Unix-like operating systems to serve as file, print and time servers for Macintosh computers.</p>
         </section>
-        <section id="main-section">
-            <header id="installation">Installation</header>
+        <section class="main-section" id="installation">
+            <header>Installation</header>
             <p>Install net-fs/netatalk:</p>
+            <code>root #emerge --ask net-fs/netatalk</code>
         </section>
-        <section id="main-section">
-            <header id="configuration">Configuration</header>
+        <section class="main-section" id="configuration">
+            <header>Configuration</header>
             <p>In this example, the icon model that appears on clients is a Mac Pro and all private IPv4 hosts are allowed access to a Time Machine volume.</p>
             <p>Create the /mnt/storage/TimeMachine folder:</p>
+            <code>root #mkdir /mnt/storage/TimeMachine</code>
             <p>Allow all users read+write access. In practice a more secure configuration should be used with uam list = "uams_dhx.so uams_dhx2.so"</p>
+            <code>root #chmod 777 /mnt/storage/TimeMachine</code>
             <p>Edit /etc/afp.conf:</p>
+            <code>[Global]
+                mimic model = MacPro
+                hosts allow = 10.0.0.0/8 172.16.0.0/20 192.168.0.0/16
+                uam list = uams_guest.so
+            [TimeMachine]
+                path = /mnt/storage/TimeMachine
+                time machine = yes</code>
         </section>
-        <section id="main-section">
-            <header id="usage">Usage</header>
+        <section class="main-section" id="usage">
+            <header>Usage</header>
             <p>To start netatalk:</p>
+            <code>root #/etc/init.d/netatalk start</code>
             <p>To start netatalk at boot:</p>
+            <code>root #rc-update add netatalk default</code>
         </section>
-        <section id="main-section">
-            <header id="sources">Sources</header>
-            
+        <section class="main-section" id="resources">
+            <header>Resources</header>
+            <ul>
+                <li>Gentoo Linux</li>
+                <li>About Gentoo Wiki</li>
+                <li>Gentoo Name and Logo Usage Guidelines</li>
+                <li>Privacy Policy</li>
+                <li>Disclaimers</li>
+            </ul>
+            <p>This page was last edited on 14 May 2020.</p>
+            <p>Gentoo is a trademark of the Gentoo Foundation, Inc.</p>
         </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
