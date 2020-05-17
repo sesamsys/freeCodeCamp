@@ -25,15 +25,8 @@ nav a {
     text-decoration: none;
 }
 
-#main-container {
-    display: block;
-    position: relative;
-    left: 300px;
-    top: 0;
-}
-
 main {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 320px; 
 }
 
 .main-section header {
@@ -53,4 +46,15 @@ p {
     padding: 10px;
     border-radius: 10px;
     display: block;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 0 20px 0 20px;
+    }
+    nav {
+        width: 100%;
+        border-right: none;
+        position: initial;
+    }
 }
