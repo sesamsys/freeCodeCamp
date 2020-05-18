@@ -39,6 +39,10 @@ p {
     color: #555555; 
 }
 
+li {
+    color: #555555;   
+}
+
 .main-section code {
     background-color: black;
     color: #eeeeee;
