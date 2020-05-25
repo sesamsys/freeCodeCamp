@@ -77,16 +77,34 @@ nav {
 }
 
 .project-tile {
+    max-width: 500px;
     margin: 20px;
     flex: 1 0 auto;
     display: inline-block;
     background-color: #635D5C;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media screen and (max-width: 800px) {
+    .project-tile { min-width: 500px; }
 }
 
 .project-tile:after {
     content: '';
     padding-top: 100%;
     display: table;
+}
+
+.project-tile a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #D0FFCE;
+    text-decoration: none;
+    background-color: rgba(61, 43, 61, 0.9);
 }
 
 #mokka-eats {
@@ -102,4 +120,15 @@ nav {
 #mokka-sleeps {
     background: url(assets/mokka-sleeps.png);
     background-size: cover;
+}
+
+footer {
+    padding: 20px;
+    background-color: #3D2B3D;
+    text-align: center;
+}
+
+footer a {
+    color: #D0FFCE;
+    text-decoration: none;
 }
